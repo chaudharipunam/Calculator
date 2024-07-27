@@ -1,0 +1,106 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+
+.container{
+    width: 90%;
+    max-width: 400px;
+    background-color: #6b6666;
+    padding: 20px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+h2{
+    font-size: 35px;
+    margin-bottom:10px;
+}
+
+p{
+    color: orange;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+#display{
+    height: 70px;
+    background-color: #bdb2b2;
+    color: black;
+    font-size: 45px;
+    text-align: right;
+    padding-right: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn{
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: black;
+    user-select: none;
+}
+
+#equal_to{
+    background-color: #b3a8a8;
+    color: black;
+}
+
+#red_btn{
+    background-color: #e83464;
+    color: white;
+}
+
+.btn:hover{
+    border: 1px solid white;
+    background-color: #8c8c8c;
+    color: white;
+    font-weight: 900;
+}
+
+@media(max-width:480px){
+    #display{
+        font-size: 30px;
+    }
+
+    .buttons{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn{
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 320px){
+    #display{
+        font-size: 25px;
+    }
+
+    .btn{
+        padding: 10px;
+        font-size: 16px;
+    }
+}
