@@ -40,7 +40,6 @@ p{
     margin: 15px 0;
     border-radius: 5px;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
@@ -59,7 +58,6 @@ p{
     cursor: pointer;
     background-color: #e0e0e0;
     color: black;
-    user-select: none;
 }
 
 #equal_to{
